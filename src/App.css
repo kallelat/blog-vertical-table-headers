@@ -1,0 +1,37 @@
+.App {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th {
+  font-weight: 400;
+
+  /* do not wrap text */
+  white-space: nowrap;
+
+  /* make it vertical, finally! */
+  writing-mode: vertical-lr;
+
+  /* make sure the text are aligned to "right" which in this case is "bottom" */
+  text-align: right;
+
+  /* just some padding, a slightly bigger on the bottom */
+  padding: 0.25rem 0.25rem 0.5rem 0.25rem;
+}
+
+td {
+  padding: 0.25rem;
+}
+
+tr:nth-child(even) td {
+  background-color: lightgray;
+}
+
+tr:nth-child(odd) td {
+  background-color: lightslategray;
+}
